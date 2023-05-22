@@ -14,13 +14,13 @@ public abstract class AtendimentoCliente {
 
     public abstract String getDescricaoCargo();
 
-    public String geraProcedimento(AtendimentoCliente procedimento) {
+    public String registrarProcedimento(Procedimento procedimento) {
         if (listaProcedimento.contains(Procedimento.getTipoProcedimentoGerado())){
             return getDescricaoCargo();
         }
         else {
             if (funcionarioSuperior != null) {
-                return funcionarioSuperior.geraProcedimento(procedimento);
+                return funcionarioSuperior.registrarProcedimento(procedimento);
             }
             else
             {

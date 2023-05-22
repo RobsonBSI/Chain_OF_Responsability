@@ -1,7 +1,7 @@
 public class Procedimento {
     private static GeraProcedimento tipoProcedimentoGerado;
+    public  Procedimento(GeraProcedimento procedimento) {
 
-    public void Procedimento(GeraProcedimento procedimento) {
         this.tipoProcedimentoGerado= procedimento;
     }
 
