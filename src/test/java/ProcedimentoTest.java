@@ -29,7 +29,7 @@ class ProcedimentoTest {
         assertEquals("Financeiro",atendente.registrarProcedimento(new Procedimento(GeraProcedimentoBoleto.getProcedimentoBoleto())));
     }
     @Test
-    void deveRetornarCoordenadorParaAssinaturaMatricula() {
+    void deveRetornarAdmistrativoParaCancelamento() {
         assertEquals("Admistracao", atendente.registrarProcedimento(new Procedimento(GeraProcedimentoCancelamento.getProcedimentoCancelamento())));
     }
 }
