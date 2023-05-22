@@ -20,4 +20,16 @@ class ProcedimentoTest {
     void deveRetornarAtendenteParaCadastroNovoCliente() {
         assertEquals("Atendente",atendente.registrarProcedimento(new Procedimento(GeraProcedimentoCadastramento.getProcedimentoCadastramento())));
     }
+    @Test
+    void deveRetornarSuporteAberturaDochamado() {
+        assertEquals("Suporte Tecnico", atendente.registrarProcedimento(new Procedimento(GeraProcedimentoChamado.getProcedimentoChamado())));
+    }
+    @Test
+    void deveRetornarFinanceiroBoleto() {
+        assertEquals("Financeiro",atendente.registrarProcedimento(new Procedimento(GeraProcedimentoBoleto.getProcedimentoBoleto())));
+    }
+    @Test
+    void deveRetornarCoordenadorParaAssinaturaMatricula() {
+        assertEquals("Admistracao", atendente.registrarProcedimento(new Procedimento(GeraProcedimentoCancelamento.getProcedimentoCancelamento())));
+    }
 }
