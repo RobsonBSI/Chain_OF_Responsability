@@ -15,7 +15,7 @@ public abstract class AtendimentoCliente {
     public abstract String getDescricaoCargo();
 
     public String geraProcedimento(AtendimentoCliente procedimento) {
-        if (listaProcedimento.contains(GeraDocumento.getTipoProcedimentoGerado())){
+        if (listaProcedimento.contains(Procedimento.getTipoProcedimentoGerado())){
             return getDescricaoCargo();
         }
         else {
@@ -28,4 +28,6 @@ public abstract class AtendimentoCliente {
             }
         }
     }
+
+
 }
