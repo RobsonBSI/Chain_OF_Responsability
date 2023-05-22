@@ -1,2 +1,10 @@
-package PACKAGE_NAME;public class GeraProcedimentoBoleto {
+public class GeraProcedimentoBoleto implements GeraProcedimento{
+
+    private static GeraProcedimentoBoleto procedimentoBoleto = new GeraProcedimentoBoleto();
+
+    private GeraProcedimentoBoleto() {};
+
+    public static GeraProcedimentoBoleto getProcedimentoBoleto() {
+        return procedimentoBoleto;
+    }
 }

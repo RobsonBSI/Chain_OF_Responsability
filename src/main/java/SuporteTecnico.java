@@ -1,2 +1,11 @@
-package PACKAGE_NAME;public class SuporteTecnico {
+public class SuporteTecnico  extends AtendimentoCliente {
+
+    public SuporteTecnico(AtendimentoCliente superior) {
+        listaProcedimento.add(GeraProcedimentoChamado.getProcedimentoChamado());
+        setFuncionarioSuperior(superior);
+    }
+    @Override
+    public String getDescricaoCargo() {
+        return "Suporte Tecnico";
+    }
 }

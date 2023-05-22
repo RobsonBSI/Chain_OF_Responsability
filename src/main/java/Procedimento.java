@@ -1,8 +1,7 @@
-public class GeraDocumento {
-
+public class Procedimento {
     private static GeraProcedimento tipoProcedimentoGerado;
 
-    public void Documento(GeraProcedimento procedimento) {
+    public void Procedimento(GeraProcedimento procedimento) {
         this.tipoProcedimentoGerado= procedimento;
     }
 

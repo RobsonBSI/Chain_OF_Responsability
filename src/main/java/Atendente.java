@@ -1,2 +1,12 @@
-package PACKAGE_NAME;public class Atendente {
+public class Atendente extends AtendimentoCliente {
+
+
+    public Atendente(AtendimentoCliente superior) {
+        listaProcedimento.add(GeraProcedimentoCadastramento.getProcedimentoCadastramento());
+        setFuncionarioSuperior(superior);
+    }
+
+    public String getDescricaoCargo() {
+        return "Atendente";
+    }
 }
